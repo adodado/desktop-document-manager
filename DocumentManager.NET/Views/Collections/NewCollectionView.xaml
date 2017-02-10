@@ -1,0 +1,32 @@
+﻿<metro:MetroWindow x:Class="DocumentManager.NET.Views.Collections.NewCollectionView"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:ignore="http://www.ignore.com"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+                   Title="Create collection"
+                   Width="545.299"
+                   Height="380"
+                   MinWidth="305"
+                   MinHeight="380"
+                   BorderBrush="{DynamicResource AccentColorBrush}"
+                   BorderThickness="1"
+                   EnableDWMDropShadow="True"
+                   ResizeMode="NoResize"
+                   ShowInTaskbar="False"
+                   WindowStartupLocation="CenterScreen"
+                   mc:Ignorable="d ignore">
+    <metro:MetroWindow.DataContext>
+        <Binding Path="NewCollection" Source="{StaticResource Locator}" />
+    </metro:MetroWindow.DataContext>
+
+    <Grid Margin="0,0,0,-1">
+
+        <Grid Margin="0,0,0,0">
+            <Rectangle Height="20"
+                       VerticalAlignment="Bottom"
+                       Fill="#FF0A6B95" />
+        </Grid>
+    </Grid>
+</metro:MetroWindow>

@@ -1,0 +1,30 @@
+﻿<Application x:Class="DocumentManager.NET.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:DocumentManager.NET.ViewModels"
+             StartupUri="Views\Main\MainWindow.xaml"
+             mc:Ignorable="d">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+                <ResourceDictionary Source="Assets\Resources\Styles.xaml" />
+                <ResourceDictionary Source="Assets\Resources\Symbols.xaml" />
+                <ResourceDictionary Source="Assets\Resources\Colors.xaml" />
+                <ResourceDictionary Source="Assets\Resources\TabControl.xaml" />
+                <ResourceDictionary Source="Assets\Resources\Button.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!--  Global View Model Locator  -->
+            <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" />
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>
